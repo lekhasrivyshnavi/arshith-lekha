@@ -1,0 +1,3475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Arshith Fresh</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+
+    body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f7f8f5;
+  color:#1d1d1d;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 7%;
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 2px 20px rgba(0,0,0,0.05);
+}
+
+.logo-text{
+  font-size:42px;
+  color:#184d35;
+  font-family:'Playfair Display',serif;
+  margin:0;
+  letter-spacing:1px;
+}
+
+.nav-right{
+  display:flex;
+  gap:40px;
+}
+
+.nav-right a{
+  text-decoration:none;
+  color:#222;
+  font-size:17px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-right a:hover{
+  color:#0d6b43;
+}
+
+/* HERO SECTION */
+
+/* ================= ABOUT HERO BANNER ================= */
+
+.about-hero-banner{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:100px 8%;
+
+    box-sizing:border-box;
+}
+
+/* BACKGROUND IMAGE */
+
+.about-banner-bg{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:1;
+
+    animation:zoomBanner 12s ease-in-out infinite alternate;
+}
+
+/* DARK GREEN OVERLAY */
+
+.about-banner-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,0,0,0.75),
+        rgba(0,90,40,0.65)
+    );
+
+    z-index:2;
+}
+
+/* CONTENT */
+
+.about-banner-content{
+
+    position:relative;
+
+    z-index:3;
+
+    max-width:850px;
+
+    color:white;
+}
+
+/* TAG */
+
+.about-banner-tag{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    margin-bottom:30px;
+}
+
+/* HEADING */
+
+.about-banner-content h1{
+
+    font-size:78px;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    margin-bottom:30px;
+
+    text-shadow:
+    0 8px 25px rgba(0,0,0,0.45);
+}
+
+/* DESCRIPTION */
+
+.about-banner-content p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:rgba(255,255,255,0.9);
+
+    max-width:750px;
+}
+
+/* STATS */
+
+.about-banner-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:50px;
+
+    flex-wrap:wrap;
+}
+
+.about-stat{
+
+    min-width:200px;
+
+    padding:25px 35px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    transition:0.5s ease;
+}
+
+.about-stat:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(0,255,120,0.15);
+}
+
+.about-stat h2{
+
+    font-size:48px;
+
+    color:#67ff9c;
+
+    margin-bottom:10px;
+}
+
+.about-stat span{
+
+    font-size:16px;
+
+    color:white;
+}
+
+/* ANIMATION */
+
+@keyframes zoomBanner{
+
+    0%{
+        transform:scale(1);
+    }
+
+    100%{
+        transform:scale(1.08);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .about-banner-content h1{
+
+        font-size:56px;
+    }
+
+    .about-banner-content p{
+
+        font-size:18px;
+    }
+}
+
+@media(max-width:768px){
+
+    .about-hero-banner{
+
+        padding:80px 25px;
+    }
+
+    .about-banner-content h1{
+
+        font-size:42px;
+    }
+
+    .about-banner-content p{
+
+        font-size:16px;
+
+        line-height:1.8;
+    }
+
+    .about-stat{
+
+        width:100%;
+    }
+}
+
+@media(max-width:480px){
+
+    .about-banner-content h1{
+
+        font-size:34px;
+    }
+
+    .about-banner-tag{
+
+        font-size:12px;
+    }
+}
+
+/* ================= COMPANY SHOWCASE ================= */
+
+.company-showcase-section{
+
+    width:100%;
+
+    padding:80px 8%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+    background:#f5f8f5;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* CARD */
+
+.company-showcase-card{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    min-height:320px;
+
+    padding:35px;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.72);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.08);
+
+    transition:0.6s ease;
+}
+
+.company-showcase-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+
+.company-showcase-image{
+
+    width:420px;
+
+    height:250px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    position:relative;
+}
+
+.company-showcase-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+.company-showcase-card:hover img{
+
+    transform:scale(1.08);
+}
+
+/* CONTENT */
+
+.company-showcase-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+}
+
+.company-showcase-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:rgba(22,163,74,0.1);
+
+    color:#15803d;
+
+    border-radius:50px;
+
+    margin-bottom:22px;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.company-showcase-content h2{
+
+    font-size:54px;
+
+    line-height:1.1;
+
+    color:#14532d;
+
+    margin-bottom:20px;
+
+    font-weight:800;
+}
+
+.company-showcase-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#4b6354;
+}
+
+/* GLOW */
+
+.company-showcase-glow{
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(34,197,94,0.12);
+
+    filter:blur(80px);
+
+    top:-100px;
+
+    right:-80px;
+
+    transition:0.6s;
+}
+
+.company-showcase-card:hover .company-showcase-glow{
+
+    transform:scale(1.2);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .company-showcase-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .company-showcase-image{
+
+        width:100%;
+
+        height:320px;
+    }
+
+    .company-showcase-content h2{
+
+        font-size:42px;
+    }
+}
+
+@media(max-width:768px){
+
+    .company-showcase-section{
+
+        padding:60px 20px;
+    }
+
+    .company-showcase-card{
+
+        padding:25px;
+
+        border-radius:30px;
+    }
+
+    .company-showcase-image{
+
+        height:250px;
+    }
+
+    .company-showcase-content h2{
+
+        font-size:34px;
+    }
+
+    .company-showcase-content p{
+
+        font-size:16px;
+    }
+}
+
+/* LEADERS */
+
+/* ================= MODERN LEADERS ================= */
+
+.modern-leaders-section{
+
+    width:100%;
+
+    padding:120px 8%;
+
+    background:#f6faf7;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* BACKGROUND SHAPE */
+
+.leaders-bg-shape{
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        rgba(34,197,94,0.12),
+        transparent
+    );
+
+    top:-250px;
+
+    right:-200px;
+
+    z-index:1;
+}
+
+/* HEADING */
+
+.leaders-heading{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    margin-bottom:100px;
+}
+
+.leaders-heading span{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:#e8f5eb;
+
+    color:#15803d;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+}
+
+.leaders-heading h1{
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    color:#14532d;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+}
+
+.leaders-heading p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#4b6354;
+}
+
+/* LEADER CARD */
+
+.modern-leader-card{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    margin-bottom:100px;
+
+    padding:50px;
+
+    border-radius:40px;
+
+    background:white;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.06);
+
+    transition:0.5s ease;
+}
+
+.modern-leader-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+
+.leader-image-box{
+
+    width:420px;
+
+    height:520px;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    flex-shrink:0;
+}
+
+.leader-image-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:1s ease;
+}
+
+.modern-leader-card:hover img{
+
+    transform:scale(1.08);
+}
+
+/* CONTENT */
+
+.leader-content{
+
+    flex:1;
+}
+
+.leader-role{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    background:#ecfdf3;
+
+    color:#15803d;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.leader-content h2{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    color:#14532d;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+}
+
+.leader-content p{
+
+    font-size:19px;
+
+    line-height:2;
+
+    color:#4b6354;
+
+    margin-bottom:40px;
+}
+
+/* STATS */
+
+.leader-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:45px;
+}
+
+.leader-stat{
+
+    min-width:170px;
+
+    padding:22px 25px;
+
+    border-radius:24px;
+
+    background:#f6faf7;
+
+    transition:0.4s ease;
+}
+
+.leader-stat:hover{
+
+    transform:translateY(-8px);
+
+    background:#ecfdf3;
+}
+
+.leader-stat h3{
+
+    font-size:40px;
+
+    color:#16a34a;
+
+    margin-bottom:10px;
+}
+
+.leader-stat span{
+
+    color:#4b6354;
+
+    font-size:15px;
+}
+
+/* BUTTON */
+
+.leader-btn{
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #15803d,
+        #22c55e
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.5s ease;
+}
+
+.leader-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 35px rgba(34,197,94,0.3);
+}
+
+/* REVERSE CARD */
+
+.reverse-card{
+
+    flex-direction:row-reverse;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .modern-leader-card,
+    .reverse-card{
+
+        flex-direction:column;
+    }
+
+    .leader-image-box{
+
+        width:100%;
+
+        height:500px;
+    }
+
+    .leader-content h2{
+
+        font-size:50px;
+    }
+}
+
+@media(max-width:768px){
+
+    .modern-leaders-section{
+
+        padding:80px 20px;
+    }
+
+    .leaders-heading h1{
+
+        font-size:42px;
+    }
+
+    .leaders-heading p{
+
+        font-size:16px;
+    }
+
+    .modern-leader-card{
+
+        padding:30px;
+    }
+
+    .leader-content h2{
+
+        font-size:38px;
+    }
+
+    .leader-content p{
+
+        font-size:16px;
+    }
+
+    .leader-image-box{
+
+        height:400px;
+    }
+}
+
+.ag-news-section{
+
+  padding: 110px 8%;
+
+  background:
+  linear-gradient(
+    to bottom,
+    #f7fbf8,
+    #edf7f1
+  );
+}
+
+/* ================= HEADING ================= */
+
+.ag-news-heading{
+
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.ag-news-tag{
+
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  background: rgba(15,107,75,0.08);
+
+  color: #0f6b4b;
+
+  border-radius: 50px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 18px;
+}
+
+.ag-news-heading h2{
+
+  font-size: 56px;
+
+  color: #123524;
+
+  margin-bottom: 18px;
+
+  font-family:'Playfair Display', serif;
+}
+
+.ag-news-heading p{
+
+  max-width: 760px;
+
+  margin: auto;
+
+  color: #555;
+
+  line-height: 1.8;
+}
+
+/* ================= FEATURED ================= */
+
+.ag-featured-news{
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 1fr;
+
+  gap: 50px;
+
+  background: white;
+
+  border-radius: 32px;
+
+  overflow: hidden;
+
+  margin-bottom: 70px;
+
+  box-shadow:
+  0 15px 40px rgba(0,0,0,0.06);
+}
+
+.ag-featured-image img{
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.ag-featured-content{
+
+  padding: 50px;
+}
+
+.ag-news-category{
+
+  display: inline-block;
+
+  padding: 8px 16px;
+
+  border-radius: 40px;
+
+  background: rgba(15,107,75,0.08);
+
+  color: #0f6b4b;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-bottom: 22px;
+}
+
+/* META */
+
+.ag-news-meta{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+
+  color: #666;
+
+  font-size: 14px;
+}
+
+.ag-news-meta i{
+
+  margin-right: 6px;
+
+  color: #0f6b4b;
+}
+
+.ag-featured-content h2{
+
+  font-size: 40px;
+
+  line-height: 1.3;
+
+  color: #123524;
+
+  margin-bottom: 22px;
+
+  font-family:'Playfair Display', serif;
+}
+
+.ag-featured-content p{
+
+  color: #555;
+
+  line-height: 1.9;
+
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.ag-news-btn{
+
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background: #0f6b4b;
+
+  color: white;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  transition: 0.4s;
+}
+
+.ag-news-btn:hover{
+
+  background: #123524;
+
+  transform: translateY(-4px);
+}
+
+/* ================= FILTERS ================= */
+
+.ag-news-filters{
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 55px;
+}
+
+.ag-news-filters button{
+
+  padding: 12px 22px;
+
+  border: none;
+
+  border-radius: 40px;
+
+  background: white;
+
+  color: #123524;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+.ag-news-filters button.active,
+.ag-news-filters button:hover{
+
+  background: #0f6b4b;
+
+  color: white;
+}
+
+/* ================= GRID ================= */
+
+.ag-news-grid{
+
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(340px,1fr));
+
+  gap: 35px;
+}
+
+/* ================= CARD ================= */
+
+.ag-news-card{
+
+  background: white;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  transition: 0.5s;
+
+  box-shadow:
+  0 12px 30px rgba(0,0,0,0.07);
+}
+
+.ag-news-card:hover{
+
+  transform: translateY(-10px);
+
+  box-shadow:
+  0 20px 45px rgba(15,107,75,0.14);
+}
+
+/* IMAGE */
+
+.ag-news-image{
+
+  overflow: hidden;
+}
+
+.ag-news-image img{
+
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+
+  transition: 0.6s;
+}
+
+.ag-news-card:hover img{
+
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+
+.ag-news-content{
+
+  padding: 30px;
+}
+
+.ag-card-category{
+
+  display: inline-block;
+
+  padding: 7px 15px;
+
+  background: rgba(15,107,75,0.08);
+
+  color: #0f6b4b;
+
+  border-radius: 40px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+.ag-card-meta{
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 13px;
+
+  color: #777;
+
+  margin-bottom: 18px;
+}
+
+.ag-news-content h3{
+
+  font-size: 28px;
+
+  line-height: 1.4;
+
+  color: #123524;
+
+  margin-bottom: 18px;
+
+  font-family:'Playfair Display', serif;
+}
+
+.ag-news-content p{
+
+  color: #555;
+
+  line-height: 1.8;
+
+  margin-bottom: 24px;
+}
+
+/* LINK */
+
+.ag-news-content a{
+
+  color: #0f6b4b;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.4s;
+}
+
+.ag-news-content a:hover{
+
+  letter-spacing: 1px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+  .ag-featured-news{
+
+    grid-template-columns: 1fr;
+  }
+
+  .ag-featured-content{
+
+    padding: 35px;
+  }
+
+  .ag-featured-content h2{
+
+    font-size: 32px;
+  }
+}
+
+@media(max-width:768px){
+
+  .ag-news-heading h2{
+
+    font-size: 38px;
+  }
+
+  .ag-news-grid{
+
+    grid-template-columns: 1fr;
+  }
+
+  .ag-news-content h3{
+
+    font-size: 24px;
+  }
+}
+
+/* ================= WORKFLOW SECTION ================= */
+
+.workflow-section{
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 1200px;
+
+    padding: 120px 7%;
+
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.60),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://gstechnologylk.com/images/comp.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+/* OVERLAY */
+
+.workflow-overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(0,255,120,0.20),
+        transparent 40%
+    );
+
+    z-index: 1;
+}
+
+/* CONTENT */
+
+.workflow-content{
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 700px;
+
+    margin-bottom: 100px;
+}
+
+.workflow-tag{
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    color: white;
+
+    backdrop-filter: blur(12px);
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+.workflow-content h1{
+
+    font-size: 78px;
+
+    line-height: 1.05;
+
+    color: white;
+
+    margin-bottom: 30px;
+
+    font-weight: 800;
+}
+
+.workflow-content h1 span{
+
+    color: #63ff8f;
+}
+
+.workflow-content p{
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.88);
+
+    max-width: 650px;
+}
+
+/* WORKFLOW LINE */
+
+.workflow-line{
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 520px;
+
+    transform: translateX(-50%);
+
+    width: 4px;
+
+    height: calc(100% - 570px);
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(99,255,143,0),
+        #63ff8f 15%,
+        #63ff8f 85%,
+        rgba(99,255,143,0)
+    );
+
+    box-shadow:
+    0 0 15px #63ff8f,
+    0 0 35px rgba(99,255,143,0.8),
+    0 0 60px rgba(99,255,143,0.5);
+
+    z-index: 1;
+}
+
+/* CARDS */
+
+.workflow-card{
+
+    position: relative;
+
+    width: 360px;
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(20px);
+
+    z-index: 3;
+
+    color: white;
+
+    transition: 0.5s ease;
+
+    overflow: hidden;
+
+    animation: floatCard 5s ease-in-out infinite;
+}
+
+.workflow-card:hover{
+
+    transform: translateY(-12px) scale(1.03);
+
+    box-shadow:
+    0 20px 40px rgba(99,255,143,0.25);
+}
+
+.workflow-icon{
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00c853,
+        #63ff8f
+    );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+    0 0 25px rgba(99,255,143,0.5);
+}
+
+.workflow-card h3{
+
+    font-size: 34px;
+
+    margin-bottom: 18px;
+
+    line-height: 1.2;
+}
+
+.workflow-card p{
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.85);
+}
+
+.workflow-number{
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: rgba(255,255,255,0.12);
+}
+
+/* CARD POSITIONS */
+
+.workflow-card1{
+    margin-left: 0;
+}
+
+.workflow-card2{
+    margin-left: auto;
+    margin-top: -60px;
+}
+
+.workflow-card3{
+    margin-top: 70px;
+}
+
+.workflow-card4{
+    margin-left: auto;
+    margin-top: -60px;
+}
+
+.workflow-card5{
+    margin-top: 70px;
+}
+
+.workflow-card6{
+    margin-left: auto;
+    margin-top: -60px;
+}
+
+/* ANIMATION */
+
+@keyframes floatCard{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+    .workflow-content h1{
+
+        font-size: 56px;
+    }
+
+    .workflow-card{
+
+        width: 100%;
+
+        margin: 40px 0 !important;
+    }
+
+    .workflow-line{
+
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+
+    .workflow-section{
+
+        padding: 80px 20px;
+    }
+
+    .workflow-content h1{
+
+        font-size: 42px;
+    }
+
+    .workflow-content p{
+
+        font-size: 17px;
+    }
+
+    .workflow-card{
+
+        padding: 28px;
+    }
+
+    .workflow-card h3{
+
+        font-size: 28px;
+    }
+}
+
+
+.ag-featured-section{
+
+  position: relative;
+
+  padding: 60px 8%;
+
+  overflow: hidden;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0f1f18,
+    #123524,
+    #0f6b4b
+  );
+}
+
+/* ================= BLURS ================= */
+
+.ag-featured-blur{
+
+  position: absolute;
+
+  width: 350px;
+
+  height: 350px;
+
+  border-radius: 50%;
+
+  filter: blur(140px);
+
+  opacity: 0.22;
+}
+
+.blur-one{
+
+  top: -100px;
+  left: -100px;
+
+  background: #22c55e;
+}
+
+.blur-two{
+
+  bottom: -120px;
+  right: -120px;
+
+  background: #16a34a;
+}
+
+/* ================= PARTICLES ================= */
+
+.ag-featured-particle{
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  background:
+  rgba(255,255,255,0.15);
+
+  animation:
+  particleFloat 8s infinite ease-in-out;
+}
+
+.particle1{
+
+  width: 12px;
+  height: 12px;
+
+  top: 18%;
+  left: 12%;
+}
+
+.particle2{
+
+  width: 20px;
+  height: 20px;
+
+  top: 70%;
+  left: 25%;
+}
+
+.particle3{
+
+  width: 14px;
+  height: 14px;
+
+  top: 35%;
+  right: 18%;
+}
+
+/* FLOAT */
+
+@keyframes particleFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-20px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+/* ================= CONTAINER ================= */
+
+.ag-featured-container{
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1450px;
+  align-items:strech;
+
+  margin: auto;
+
+  display:grid;
+
+  grid-template-columns: 1.3fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* ================= LEFT ================= */
+
+.ag-featured-tag{
+
+  display: inline-block;
+
+  padding: 9px 18px;
+
+  border-radius: 50px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  color: #bbf7d0;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  margin-bottom: 24px;
+
+  backdrop-filter: blur(10px);
+}
+
+.ag-featured-content h1{
+
+  font-size: 52px;
+
+  line-height: 1.15;
+
+  color: white;
+  word-break: normal;
+
+  margin-bottom: 28px;
+
+  font-family:'Playfair Display', serif;
+}
+
+.ag-featured-content p{
+
+  color:
+  rgba(255,255,255,0.75);
+
+  line-height: 1.9;
+
+  font-size: 17px;
+
+  margin-bottom: 42px;
+}
+
+/* ================= STATS ================= */
+
+.ag-featured-stats{
+
+  display: flex;
+
+  gap: 25px;
+
+  margin-bottom: 45px;
+
+  flex-wrap: wrap;
+}
+
+.ag-stat-box{
+
+  min-width: 160px;
+
+  padding: 24px;
+
+  border-radius: 24px;
+
+  background:
+  rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(14px);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  transition: 0.4s ease;
+}
+
+.ag-stat-box:hover{
+
+  transform:
+  translateY(-8px);
+
+  box-shadow:
+  0 18px 40px rgba(34,197,94,0.16);
+}
+
+.ag-stat-box h3{
+
+  font-size: 38px;
+
+  color: #bbf7d0;
+
+  margin-bottom: 8px;
+}
+
+.ag-stat-box span{
+
+  color:
+  rgba(255,255,255,0.72);
+
+  font-size: 14px;
+}
+
+/* ================= BUTTONS WRAPPER ================= */
+
+.ag-featured-buttons{
+
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  margin-top: 10px;
+}
+
+/* ================= ALL BUTTONS ================= */
+
+.ag-featured-buttons button{
+
+  padding: 16px 34px;
+
+  border-radius: 50px;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: 0.4s ease;
+
+  position: relative;
+
+  overflow: hidden;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= FIRST BUTTON ================= */
+
+.ag-featured-buttons button:first-child{
+
+  background:
+  linear-gradient(
+    90deg,
+    #22c55e,
+    #16a34a
+  );
+
+  color: white;
+
+  box-shadow:
+  0 10px 30px rgba(34,197,94,0.18);
+}
+
+/* HOVER */
+
+.ag-featured-buttons button:first-child:hover{
+
+  transform:
+  translateY(-6px)
+  scale(1.03);
+
+  box-shadow:
+  0 18px 40px rgba(34,197,94,0.35);
+}
+
+/* ================= SECOND BUTTON ================= */
+
+.ag-featured-buttons button:last-child{
+
+  background:
+  rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  border:
+  1px solid rgba(255,255,255,0.14);
+
+  color: white;
+}
+
+/* HOVER */
+
+.ag-featured-buttons button:last-child:hover{
+
+  background:
+  rgba(255,255,255,0.16);
+
+  transform:
+  translateY(-6px)
+  scale(1.03);
+
+  box-shadow:
+  0 18px 40px rgba(255,255,255,0.08);
+}
+
+/* ================= BUTTON ACTIVE EFFECT ================= */
+
+.ag-featured-buttons button:active{
+
+  transform: scale(0.96);
+}
+
+/* ================= VISUAL ================= */
+
+.ag-featured-visual{
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.ag-featured-card{
+
+  width: 100%;
+
+  max-width: 520px;
+
+  height: 620px;
+
+  position: relative;
+
+  border-radius: 36px;
+
+  overflow: hidden;
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,0.25);
+
+  transition: 0.5s ease;
+}
+
+/* IMAGE */
+
+.ag-featured-card img{
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+.ag-featured-card:hover{
+
+  transform:
+  rotateY(4deg)
+  rotateX(4deg)
+  scale(1.02);
+}
+
+.ag-featured-card:hover img{
+
+  transform: scale(1.06);
+}
+
+/* OVERLAY */
+
+.ag-featured-card::after{
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.05)
+  );
+}
+
+/* ================= FLOATING INFO CARDS ================= */
+
+.ag-floating-card{
+
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 20px 24px;
+
+  border-radius: 24px;
+
+  background:
+  rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(18px);
+
+  border:
+  1px solid rgba(255,255,255,0.12);
+
+  color: white;
+
+  z-index: 2;
+
+  animation:
+  floatingCard 5s infinite ease-in-out;
+}
+
+.ag-floating-card i{
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 16px;
+
+  background:
+  rgba(255,255,255,0.12);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.ag-floating-card h4{
+
+  margin-bottom: 4px;
+
+  font-size: 18px;
+}
+
+.ag-floating-card p{
+
+  margin: 0;
+
+  font-size: 13px;
+
+  color:
+  rgba(255,255,255,0.7);
+}
+
+/* POSITIONS */
+
+.card-top{
+
+  top: 35px;
+  left: -35px;
+}
+
+.card-bottom{
+
+  bottom: 35px;
+  right: -35px;
+}
+
+/* FLOAT */
+
+@keyframes floatingCard{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+  .ag-featured-container{
+
+    grid-template-columns: 1fr;
+  }
+
+  .ag-featured-content h1{
+
+    font-size: 52px;
+  }
+
+  .ag-featured-card img{
+
+    height: 550px;
+  }
+}
+
+@media(max-width:768px){
+
+  .ag-featured-section{
+
+    padding: 90px 6%;
+  }
+
+  .ag-featured-content h1{
+
+    font-size: 38px;
+  }
+
+  .ag-featured-content p{
+
+    font-size: 15px;
+  }
+
+  .ag-featured-card img{
+
+    height: 420px;
+  }
+
+  .ag-floating-card{
+
+    padding: 16px 18px;
+  }
+
+  .card-top{
+
+    left: 10px;
+  }
+
+  .card-bottom{
+
+    right: 10px;
+  }
+}
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+  .ag-process-grid::before{
+
+    display: none;
+  }
+
+  .ag-process-heading h2{
+
+    font-size: 42px;
+  }
+}
+
+@media(max-width:768px){
+
+  .ag-process-section{
+
+    padding: 90px 6%;
+  }
+
+  .ag-process-heading h2{
+
+    font-size: 34px;
+  }
+
+  .ag-process-card{
+
+    padding: 32px;
+  }
+
+  .ag-process-card h3{
+
+    font-size: 24px;
+  }
+
+  .ag-process-number{
+
+    font-size: 42px;
+  }
+}
+
+
+/* ANIMATIONS */
+
+@keyframes leftSlide{
+
+  from{
+    opacity:0;
+    transform:translateX(-120px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+@keyframes rightSlide{
+
+  from{
+    opacity:0;
+    transform:translateX(120px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .about-hero,
+  .company-section,
+  .leader-box,
+  .reverse{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .about-text h1{
+    font-size:50px;
+  }
+
+  .company-text h2,
+  .leaders-title{
+    font-size:48px;
+  }
+
+  .leader-content h2{
+    font-size:42px;
+  }
+
+  .about-hero img,
+  .company-img img{
+    width:100%;
+  }
+
+  .stats{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+/* NAVBAR */
+
+.navbar{
+    flex-direction:column;
+    gap:18px;
+    padding:15px 5%;
+}
+
+.logo-text{
+    font-size:30px;
+    text-align:center;
+}
+
+.nav-right{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+
+.nav-right a{
+    font-size:15px;
+}
+
+/* HERO SECTION */
+
+.about-hero{
+    min-height:auto;
+    padding:70px 5%;
+    gap:40px;
+
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-hero img{
+    width:100%;
+    max-width:320px;
+    height:auto;
+}
+
+.about-text{
+    max-width:100%;
+}
+
+.about-text h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.about-text p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+}
+  </style>
+
+</head>
+
+<html>
+
+  <header class="navbar">
+
+  <!-- LOGO -->
+  <div class="logo">
+    <h2 class="logo-text">ARSHITH GROUPS</h2>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav-right">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About Us</a>
+
+    <a href="business.html">Business</a>
+
+    <!-- DROPDOWN -->
+
+    <div class="dropdown">
+
+      <a href="careers.html" class="drop-btn">
+        Careers ▾
+      </a>
+
+      <div class="dropdown-content">
+
+        <a href="careers.html">
+          Job Opportunities
+        </a>
+
+        <a href="internship.html">
+          Internship Program
+        </a>
+
+      </div>
+
+    </div>
+
+    <input type="text" placeholder="Search..." class="search-box">
+
+  </nav>
+
+</header>
+<body>
+
+  <!-- HERO -->
+
+  <section class="about-hero-banner">
+
+    <img src="https://static.investindia.gov.in/s3fs-public/2019-08/Software%20Industry.jpg" class="about-banner-bg">
+
+    <div class="about-banner-overlay"></div>
+
+    <div class="about-banner-content">
+
+        <span class="about-banner-tag">
+            ABOUT ARSHITH GROUPS
+        </span>
+
+        <h1>
+            Building The Future <br>
+            Through Innovation & Growth
+        </h1>
+
+        <p>
+            Arshith Groups is a diversified enterprise operating across
+            technology, food, IT solutions, internships, and business services.
+            We focus on innovation, trust, quality, and impactful growth.
+        </p>
+
+        <div class="about-banner-stats">
+
+            <div class="about-stat">
+                <h2>3+</h2>
+                <span>Business Ventures</span>
+            </div>
+
+            <div class="about-stat">
+                <h2>450+</h2>
+                <span>Students Trained</span>
+            </div>
+
+            <div class="about-stat">
+                <h2>120+</h2>
+                <span>Projects Delivered</span>
+            </div>
+
+        </div>
+
+    </div>
+
+  </section>
+
+  <section class="company-showcase-section">
+
+    <div class="company-showcase-card">
+
+        <div class="company-showcase-image">
+            <img src="https://cdn.corporatefinanceinstitute.com/assets/Types-of-Businesses-Opener_v2.jpeg" alt="">
+        </div>
+
+        <div class="company-showcase-content">
+
+            <span class="company-showcase-tag">
+                Business Growth
+            </span>
+
+            <h2>3+ Businesses</h2>
+
+            <p>
+                Diversified ventures across food, technology,
+                IT solutions, and consulting services.
+            </p>
+
+        </div>
+
+        <div class="company-showcase-glow"></div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="company-showcase-card">
+
+        <div class="company-showcase-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhxkJ0WTUdkoKiOccATDXH3DenuvWu8PeXzSpuLN63r4rVtjN442FaZs&s=10" alt="">
+        </div>
+
+        <div class="company-showcase-content">
+
+            <span class="company-showcase-tag">
+                Innovation
+            </span>
+
+            <h2>Innovation Driven</h2>
+
+            <p>
+                Focused on scalable growth, digital transformation,
+                and impactful technology solutions.
+            </p>
+
+        </div>
+
+        <div class="company-showcase-glow"></div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="company-showcase-card">
+
+        <div class="company-showcase-image">
+            <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2019/10/business_with_esa/21093947-3-eng-GB/Business_with_ESA_pillars.jpg" alt="">
+        </div>
+
+        <div class="company-showcase-content">
+
+            <span class="company-showcase-tag">
+                Trusted Vision
+            </span>
+
+            <h2>Built On Trust</h2>
+
+            <p>
+                Creating sustainable businesses with quality,
+                transparency, innovation, and excellence.
+            </p>
+
+        </div>
+
+        <div class="company-showcase-glow"></div>
+
+    </div>
+
+</section>
+
+  <!-- LEADERS -->
+
+  <!-- ================= LEADERSHIP SECTION ================= -->
+
+<section class="modern-leaders-section">
+
+    <div class="leaders-bg-shape"></div>
+
+    <div class="leaders-heading">
+
+        <span>OUR LEADERSHIP</span>
+
+        <h1>
+            Visionaries Driving <br>
+            Innovation & Growth
+        </h1>
+
+        <p>
+            Meet the leadership team shaping Arshith Groups through
+            technology, innovation, sustainability, and impactful business strategies.
+        </p>
+
+    </div>
+
+    <!-- LEADER 1 -->
+
+    <div class="modern-leader-card">
+
+        <div class="leader-image-box">
+            <img src="farooksir.png" alt="">
+        </div>
+
+        <div class="leader-content">
+
+            <div class="leader-role">
+                Chairman & CEO
+            </div>
+
+            <h2>Farook Nurubasha</h2>
+
+            <p>
+                Leading Arshith Groups with a strong vision focused on innovation,
+                sustainability, digital transformation, and excellence across industries.
+            </p>
+
+            <div class="leader-stats">
+
+                <div class="leader-stat">
+                    <h3>10+</h3>
+                    <span>Years Leadership</span>
+                </div>
+
+                <div class="leader-stat">
+                    <h3>3+</h3>
+                    <span>Business Ventures</span>
+                </div>
+
+                <div class="leader-stat">
+                    <h3>120+</h3>
+                    <span>Projects Guided</span>
+                </div>
+
+            </div>
+
+            <button onclick="window.location.href='https://www.linkedin.com/search/results/all/?keywords=Arshith%20Group&origin=RICH_QUERY_TYPEAHEAD_HISTORY&heroEntityKey=urn%3Ali%3Aorganization%3A108255001&position=0'">
+              View profile
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- LEADER 2 -->
+
+    <div class="modern-leader-card reverse-card">
+
+        <div class="leader-content">
+
+            <div class="leader-role">
+                President & Managing Director
+            </div>
+
+            <h2>Nelli Pallavi</h2>
+
+            <p>
+                Driving operational excellence and strengthening innovation,
+                business growth, mentorship initiatives, and organizational leadership.
+            </p>
+
+            <div class="leader-stats">
+
+                <div class="leader-stat">
+                    <h3>8+</h3>
+                    <span>Years Experience</span>
+                </div>
+
+                <div class="leader-stat">
+                    <h3>450+</h3>
+                    <span>Students Impacted</span>
+                </div>
+
+                <div class="leader-stat">
+                    <h3>25+</h3>
+                    <span>Workshops Led</span>
+                </div>
+
+            </div>
+
+            <button onclick="window.location.href='https://www.linkedin.com/search/results/all/?keywords=Arshith%20Group&origin=RICH_QUERY_TYPEAHEAD_HISTORY&heroEntityKey=urn%3Ali%3Aorganization%3A108255001&position=0'">
+              View profile
+            </button>
+        </div>
+
+        <div class="leader-image-box">
+            <img src="pallaviii.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WORKFLOW SECTION ================= -->
+
+<section class="workflow-section">
+
+    <div class="workflow-overlay"></div>
+
+    <div class="workflow-content">
+
+        <span class="workflow-tag">
+            OUR WORKFLOW
+        </span>
+
+        <h1>
+            Turning Ideas Into <br>
+            Scalable <span>Digital Experiences</span>
+        </h1>
+
+        <p>
+            At Arshith Groups, we follow a modern innovation-driven workflow
+            that combines strategy, technology, creativity, and execution
+            to deliver impactful digital solutions.
+        </p>
+
+    </div>
+
+    <!-- WORKFLOW CARDS -->
+
+    <div class="workflow-card workflow-card1">
+
+        <div class="workflow-icon">
+            🔍
+        </div>
+
+        <h3>Requirement Analysis</h3>
+
+        <p>
+            Understanding business goals and user requirements through
+            research-driven discovery.
+        </p>
+
+        <span class="workflow-number">01</span>
+
+    </div>
+
+    <div class="workflow-card workflow-card2">
+
+        <div class="workflow-icon">
+            📊
+        </div>
+
+        <h3>Strategy & Planning</h3>
+
+        <p>
+            Building scalable roadmaps and execution strategies for growth.
+        </p>
+
+        <span class="workflow-number">02</span>
+
+    </div>
+
+    <div class="workflow-card workflow-card3">
+
+        <div class="workflow-icon">
+            💻
+        </div>
+
+        <h3>Design & Development</h3>
+
+        <p>
+            Creating premium UI systems and scalable digital products.
+        </p>
+
+        <span class="workflow-number">03</span>
+
+    </div>
+
+    <div class="workflow-card workflow-card4">
+
+        <div class="workflow-icon">
+            ⚡
+        </div>
+
+        <h3>Testing & Optimization</h3>
+
+        <p>
+            Ensuring performance, responsiveness, and enterprise-level quality.
+        </p>
+
+        <span class="workflow-number">04</span>
+
+    </div>
+
+    <div class="workflow-card workflow-card5">
+
+        <div class="workflow-icon">
+            🚀
+        </div>
+
+        <h3>Deployment & Launch</h3>
+
+        <p>
+            Smooth deployment with secure and launch-ready execution.
+        </p>
+
+        <span class="workflow-number">05</span>
+
+    </div>
+
+    <div class="workflow-card workflow-card6">
+
+        <div class="workflow-icon">
+            🌱
+        </div>
+
+        <h3>Support & Growth</h3>
+
+        <p>
+            Continuous innovation, scaling support, and long-term growth.
+        </p>
+
+        <span class="workflow-number">06</span>
+
+    </div>
+
+    <!-- GLOW LINE -->
+
+    <div class="workflow-line"></div>
+
+</section>
+
+<!-- ================= FEATURED INITIATIVE SECTION ================= -->
+
+<section class="ag-featured-section">
+
+  <!-- BACKGROUND EFFECTS -->
+
+  <div class="ag-featured-blur blur-one"></div>
+  <div class="ag-featured-blur blur-two"></div>
+
+  <div class="ag-featured-particle particle1"></div>
+  <div class="ag-featured-particle particle2"></div>
+  <div class="ag-featured-particle particle3"></div>
+
+  <div class="ag-featured-container">
+
+    <!-- ================= LEFT CONTENT ================= -->
+
+    <div class="ag-featured-content">
+
+      <span class="ag-featured-tag">
+        Featured Initiative
+      </span>
+
+      <h1>
+        Empowering Future Innovators Through
+        Technology & Real-World Experience
+      </h1>
+
+      <p>
+        Arshith Groups is building a modern ecosystem that connects
+        technology, internships, innovation, and business transformation.
+        Through impactful digital solutions and industry-focused learning,
+        we aim to empower students, startups, and organizations for the future.
+      </p>
+
+      <!-- STATS -->
+
+      <div class="ag-featured-stats">
+
+        <div class="ag-stat-box">
+
+          <h3>
+            450+
+          </h3>
+
+          <span>
+            Interns Trained
+          </span>
+
+        </div>
+
+        <div class="ag-stat-box">
+
+          <h3>
+            120+
+          </h3>
+
+          <span>
+            Projects Delivered
+          </span>
+
+        </div>
+
+        <div class="ag-stat-box">
+
+          <h3>
+            20+
+          </h3>
+
+          <span>
+            Technologies Used
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- BUTTONS -->
+
+      <div class="ag-featured-buttons">
+
+        <button onclick="window.location.href='internship.html'">
+         Explore more
+        </button>
+
+        <button onclick="window.location.href='frontend-details.html'">
+         Join internship
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- ================= RIGHT VISUAL ================= -->
+
+    <div class="ag-featured-visual">
+
+      <!-- MAIN CARD -->
+
+      <div class="ag-featured-card">
+
+        <img src="https://thumbs.dreamstime.com/b/modern-designers-office-employees-informal-female-group-128649682.jpg"
+        alt="Innovation">
+
+        <!-- FLOATING CARD 1 -->
+
+        <div class="ag-floating-card card-top">
+
+          <i class="fa-solid fa-lightbulb"></i>
+
+          <div>
+
+            <h4>
+              Innovation
+            </h4>
+
+            <p>
+              Future-focused solutions
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- FLOATING CARD 2 -->
+
+        <div class="ag-floating-card card-bottom">
+
+          <i class="fa-solid fa-graduation-cap"></i>
+
+          <div>
+
+            <h4>
+              Internship Ecosystem
+            </h4>
+
+            <p>
+              Real-world learning
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= NEWS SECTION ================= -->
+
+<section class="ag-news-section">
+
+  <!-- ================= HEADING ================= -->
+
+  <div class="ag-news-heading reveal">
+
+    <span class="ag-news-tag">
+      Latest News & Updates
+    </span>
+
+    <h2>
+      Stories, Achievements & Industry Insights
+    </h2>
+
+    <p>
+      Stay updated with the latest developments, collaborations,
+      workshops, internship initiatives, and business milestones
+      across Arshith Groups.
+    </p>
+
+  </div>
+
+  <!-- ================= FEATURED ARTICLE ================= -->
+
+  <div class="ag-featured-news reveal">
+
+    <div class="ag-featured-image">
+
+      <img src="1.png" alt="Featured News">
+
+    </div>
+
+    <div class="ag-featured-content">
+
+      <span class="ag-news-category">
+        Technology
+      </span>
+
+      <div class="ag-news-meta">
+
+        <span>
+          <i class="fa-regular fa-user"></i>
+          By Arshith Team
+        </span>
+
+        <span>
+          <i class="fa-regular fa-calendar"></i>
+          May 2026
+        </span>
+
+        <span>
+          <i class="fa-regular fa-clock"></i>
+          5 min read
+        </span>
+
+      </div>
+
+      <h2>
+        Arshith Groups Expands Digital Innovation &
+        Internship Ecosystem
+      </h2>
+
+      <p>
+        Arshith Groups continues expanding its technology,
+        internship, and business ecosystem through innovation,
+        collaborations, and industry-focused initiatives designed
+        to empower future professionals.
+      </p>
+
+      <a href="news-details.html" class="ag-news-btn">
+        Read Full Article
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- ================= FILTERS ================= -->
+
+  <div class="ag-news-filters reveal">
+
+    <button class="active">
+      All
+    </button>
+
+    <button>
+      Technology
+    </button>
+
+    <button>
+      Workshops
+    </button>
+
+    <button>
+      Internships
+    </button>
+
+    <button>
+      Collaborations
+    </button>
+
+  </div>
+
+  <!-- ================= NEWS GRID ================= -->
+
+  <div class="ag-news-grid">
+
+    <!-- CARD 1 -->
+
+    <div class="ag-news-card reveal">
+
+      <div class="ag-news-image">
+
+        <img src="1.png">
+
+      </div>
+
+      <div class="ag-news-content">
+
+        <span class="ag-card-category">
+          Technology
+        </span>
+
+        <div class="ag-card-meta">
+
+          <span>
+            By Arshith Team
+          </span>
+
+          <span>
+            May 2026
+          </span>
+
+        </div>
+
+        <h3>
+          A Defining Moment For Future Growth & Direction
+        </h3>
+
+        <p>
+          Strengthening innovation, technology solutions,
+          and internship opportunities for future growth.
+        </p>
+
+        <a href="news-details.html">
+          Read More →
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="ag-news-card reveal">
+
+      <div class="ag-news-image">
+
+        <img src="2.png">
+
+      </div>
+
+      <div class="ag-news-content">
+
+        <span class="ag-card-category">
+          Leadership
+        </span>
+
+        <div class="ag-card-meta">
+
+          <span>
+            By Media Team
+          </span>
+
+          <span>
+            April 2026
+          </span>
+
+        </div>
+
+        <h3>
+          Marking A New Phase Of Progress & Commitment
+        </h3>
+
+        <p>
+          Leadership initiatives driving business excellence
+          and organizational development.
+        </p>
+
+        <a href="news-details.html">
+          Read More →
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="ag-news-card reveal">
+
+      <div class="ag-news-image">
+
+        <img src="3.png">
+
+      </div>
+
+      <div class="ag-news-content">
+
+        <span class="ag-card-category">
+          Collaboration
+        </span>
+
+        <div class="ag-card-meta">
+
+          <span>
+            By Arshith Team
+          </span>
+
+          <span>
+            March 2026
+          </span>
+
+        </div>
+
+        <h3>
+          Honoring Institutional Collaboration & Shared Success
+        </h3>
+
+        <p>
+          Building long-term partnerships with institutions
+          and industry leaders.
+        </p>
+
+        <a href="news-details.html">
+          Read More →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<script>
+
+function openPopup(){
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+
+</script>
+<!-- ================================= -->
+<!-- CREATIVE FOOTER -->
+<!-- ================================= -->
+
+<footer class="creative-footer">
+
+    <!-- TOP CURVE IMAGE -->
+
+    <div class="footer-top-image"></div>
+
+    <div class="footer-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="footer-brand">
+
+            <span class="footer-tag">
+                ✦ ARSHITH GROUPS
+            </span>
+
+            <h1>
+                WHERE IDEAS MEET
+                <span>REAL BUSINESS & TECHNOLOGY SOLUTIONS.</span>
+            </h1>
+
+            <p class="footer-desc">
+                From fresh natural products to modern technology
+                and business solutions, Arshith Groups connects innovation with real-world impact.
+            </p>
+
+            <!-- NEWSLETTER -->
+
+            <div class="footer-newsletter">
+
+                <input
+                type="email"
+                placeholder="Enter your email">
+
+                <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Subscribe
+                </button>
+
+            </div>
+
+            <p class="footer-note">
+                We only send internship updates,
+                career opportunities and useful insights.
+            </p>
+
+        </div>
+
+        <!-- Links Columns -->
+      <div class="ag-footer__links-grid">
+        <div class="ag-footer__links-col">
+          <h4 class="ag-footer__col-title">Services <span class="ag-footer__col-plus">+</span></h4>
+          <ul class="ag-footer__link-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="carrers.html">Careers</a></li>
+            <li><a href="https://arshithfresh.com/">Arshith Fresh</a></li>
+            <li><a href="https://arshithgroup.com/">Arshith Infotech</a></li>
+            <li><a href="https://suntechorganization.com/">Suntech Solutions</a></li>
+          </ul>
+        </div>
+        <div class="ag-footer__links-col">
+          <h4 class="ag-footer__col-title">Policies <span class="ag-footer__col-plus">+</span></h4>
+          <ul class="ag-footer__link-list">
+            <li><a href="business.html">
+              Contact us
+             </a>
+            </li>
+            <li><a href="privacy-policy.html">
+              Privacy Policy
+             </a>
+            </li>
+
+            <li><a href="terms-of-service.html">
+             Terms Of Service
+             </a>
+            </li>
+          </ul>
+        </div>
+            <div class="ag-footer__links-col">
+          <h4 class="ag-footer__col-title">Need Help?</h4>
+          <ul class="ag-footer__contact-list">
+            <li>
+              <span class="ag-footer__contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span>Bengaluru, Karnataka, India</span>
+            </li>
+            <li>
+              <span class="ag-footer__contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </span>
+              <span>+91 9014574712</span>
+            </li>
+            <li>
+              <span class="ag-footer__contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span>support@arshithfresh.com</span>
+            </li>
+          </ul>
+
+        </div>
+
+    </div>
+
+    </div>
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="footer-bottom-left">
+
+            <p>
+                © 2026 Arshith Groups.
+                All rights reserved.
+            </p>
+
+        </div>
+
+        <!-- SOCIAL ICONS -->
+
+        <div class="footer-socials">
+
+            <a href="https://www.instagram.com/arshith_fresh/"
+               target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://in.linkedin.com/company/arshith-fresh-india-pvt-ltd"
+                target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+ 
+<script>
+
+const dropdown =
+document.querySelector(".dropdown");
+
+dropdown.addEventListener("click", ()=>{
+
+    dropdown.classList.toggle("active");
+
+});
+
+</script>
+<script>
+
+const reveals =
+document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+  reveals.forEach((element) => {
+
+    const windowHeight =
+    window.innerHeight;
+
+    const elementTop =
+    element.getBoundingClientRect().top;
+
+    if(elementTop < windowHeight - 100){
+
+      element.classList.add("active");
+
+    }
+
+  });
+
+});
+
+</script>
+/* ================= WORKFLOW SPOTLIGHT ================= */
+<script>
+const workflowCards =
+document.querySelectorAll(
+".ag-process-card"
+);
+
+workflowCards.forEach(card=>{
+
+  card.addEventListener(
+  "mousemove",
+  e=>{
+
+    const rect =
+    card.getBoundingClientRect();
+
+    const x =
+    e.clientX - rect.left;
+
+    const y =
+    e.clientY - rect.top;
+
+    card.style.setProperty(
+    "--x",
+    `${x}px`
+    );
+
+    card.style.setProperty(
+    "--y",
+    `${y}px`
+    );
+
+  });
+
+});
+</script>
+</body>
+</html>
