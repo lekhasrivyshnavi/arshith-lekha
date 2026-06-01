@@ -9408,7 +9408,7 @@ section{
     }
 
     .case-left{
-        min-height:650px;
+        min-height:1200px !important;
     }
 
 }
@@ -9416,13 +9416,28 @@ section{
 @media(max-width:768px){
 
     .case-content{
-        left:30px;
-        right:30px;
-        bottom:30px;
+        position: relative;
+        left:0;
+        right:0;
+        top: 0;
+        bottom:0;
+        padding:20px;
+        background: #111;
+    }
+    .case-left{
+        height: 700px !important;
+        min-height: 700px !important;
+    }
+    .case-left img{
+       height: 100% !important;
     }
 
     .case-content h1{
         font-size:34px;
+        line-height: 1.1;
+    }
+    .case-content p{
+        font-size: 15px;
     }
 
     .metrics{
@@ -9431,6 +9446,18 @@ section{
 
     .case-item{
         font-size:18px;
+    }
+    .image-overlay{
+        justify-content: flex-start;
+        padding: 25px;
+    }
+    .overlay-content{
+        top:30px;
+        bottom:auto;
+    }
+    .overlay-content h2{
+        font-size: 34px;
+        line-height: 1.1;
     }
 
 }
