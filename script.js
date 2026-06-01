@@ -203,3 +203,23 @@ if (form) {
     });
 
 }
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if(menuToggle && navMenu){
+
+    menuToggle.addEventListener("click", () => {
+
+        navMenu.classList.toggle("active");
+
+        if(navMenu.classList.contains("active")){
+            menuToggle.innerHTML = "&times;";
+        }
+        else{
+            menuToggle.innerHTML = "☰";
+        }
+
+    });
+
+}

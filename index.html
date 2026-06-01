@@ -35,45 +35,53 @@
 
   <header class="navbar">
 
-  <!-- LOGO -->
-  <div class="logo">
-    <h2 class="logo-text">ARSHITH GROUPS</h2>
-  </div>
+    <div class="logo">
+        <h2 class="logo-text">ARSHITH GROUPS</h2>
+    </div>
 
-  <!-- NAVIGATION -->
-  <nav class="nav-right">
+    <!-- Search + Hamburger -->
+    <div class="nav-icons">
 
-    <a href="index.html">Home</a>
+        <div class="search-icon">
+            🔍
+        </div>
 
-    <a href="about.html">About Us</a>
-
-    <a href="business.html">Business</a>
-
-    <!-- DROPDOWN -->
-
-    <div class="dropdown">
-
-      <a href="careers.html" class="drop-btn">
-        Careers ▾
-      </a>
-
-      <div class="dropdown-content">
-
-        <a href="careers.html">
-          Job Opportunities
-        </a>
-
-        <a href="internship.html">
-          Internship Program
-        </a>
-
-      </div>
+        <div class="menu-toggle" id="menuToggle">
+            ☰
+        </div>
 
     </div>
 
-    <input type="text" placeholder="Search..." class="search-box">
+    <!-- Navigation Menu -->
+    <div class="nav-right" id="navMenu">
 
-  </nav>
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="business.html">Business</a>
+
+        <div class="dropdown">
+
+            <a href="careers.html" class="drop-btn">
+                Careers ▼
+            </a>
+
+            <div class="dropdown-content">
+                <a href="careers.html">Job Opportunities</a>
+                <a href="internship.html">Internship Program</a>
+            </div>
+
+        </div>
+
+        <!-- Desktop Search Box -->
+        <input
+            type="text"
+            placeholder="Search..."
+            class="search-box"
+        >
+
+    </div>
 
 </header>
 
@@ -1364,8 +1372,8 @@ let started = false;
 window.addEventListener("scroll", () => {
 
     const statsSection =
-    document.querySelector(".stats-section");
-
+    document.querySelector(".trust-section");
+    if(!statsSection) return;
     const sectionTop =
     statsSection.getBoundingClientRect().top;
 
