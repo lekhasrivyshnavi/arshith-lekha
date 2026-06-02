@@ -14,6 +14,7 @@
 <title>Frontend Internship Details</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -80,7 +81,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <section class="frontend-hero-slider">
 
-<div class="slider-content">
+<div class="slider-content" data-aos="fade-right">
 
 <span>
 ✦ FRONTEND DEVELOPMENT INTERNSHIP
@@ -296,7 +297,7 @@ Registration Details
 </section>
 <section class="whatisit-section">
 
-    <div class="whatisit-left">
+    <div class="whatisit-left" data-aos="fade-left">
 
         <span>INTERNSHIP OVERVIEW</span>
 
@@ -322,7 +323,7 @@ Registration Details
 
     <div class="whatisit-right">
 
-        <div class="whatisit-card">
+        <div class="whatisit-card" data-aos="fade-right">
             <h2>Live Projects</h2>
             <p>
                 Work on industry-oriented projects with
@@ -330,7 +331,7 @@ Registration Details
             </p>
         </div>
 
-        <div class="whatisit-card">
+        <div class="whatisit-card" data-aos="fade-right">
             <h2>Mentorship</h2>
             <p>
                 Learn from guided sessions and practical
@@ -338,7 +339,7 @@ Registration Details
             </p>
         </div>
 
-        <div class="whatisit-card">
+        <div class="whatisit-card" data-aos="fade-right">
             <h2>Modern Tools</h2>
             <p>
                 Explore UI/UX tools, GitHub workflow,
@@ -540,7 +541,7 @@ Registration Details
 <section class="registration-section"
 id="registration-section">
 
-<div class="registration-heading">
+<div class="registration-heading" data-aos="fade-left">
 
 <span>✦ REGISTRATION DETAILS</span>
 
@@ -554,7 +555,7 @@ Complete Your Registration
 
 <!-- LEFT -->
 
-<div class="payment-info-box">
+<div class="payment-info-box" data-aos="fade-left">
 
 <h2>Payment Information</h2>
 
@@ -596,7 +597,7 @@ Apply Internship
 
 <!-- RIGHT -->
 
-<div class="qr-box">
+<div class="qr-box" data-aos="fade-right">
 
 <img src="https://api.qrserver.com/v1/create-qr-code/?size=350x350&data=nfarookafi@oksbi">
 
@@ -823,5 +824,10 @@ dropdown.addEventListener("click", ()=>{
 
 </script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
 </body>
 </html>

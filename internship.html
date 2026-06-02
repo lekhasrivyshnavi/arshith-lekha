@@ -14,6 +14,7 @@
 <title>Arshith Internship Program</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -85,7 +86,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <div class="blur-circle circle1"></div>
 <div class="blur-circle circle2"></div>
 
-<div class="hero-content">
+<div class="hero-content"  data-aos="fade-right">
 
 <h1>
 Build Your Future With <br>
@@ -113,21 +114,21 @@ Apply Internship
 
 <div class="hero-stats">
 
-<div class="hero-stat-card">
+<div class="hero-stat-card" data-aos="fade-right">
 
 <h2>1000+</h2>
 <p>Students Trained</p>
 
 </div>
 
-<div class="hero-stat-card">
+<div class="hero-stat-card"  data-aos="fade-right">
 
 <h2>50+</h2>
 <p>Projects</p>
 
 </div>
 
-<div class="hero-stat-card">
+<div class="hero-stat-card"  data-aos="fade-right">
 
 <h2>95%</h2>
 <p>Practical Training</p>
@@ -177,7 +178,7 @@ Apply Internship
 
 <section class="overview-section">
 
-<div class="overview-heading">
+<div class="overview-heading"  data-aos="fade-left">
 
 <span>✦ WHY CHOOSE US</span>
 
@@ -193,7 +194,7 @@ team collaboration and practical exposure.
 
 </div>
 
-<div class="overview-grid">
+<div class="overview-grid" data-aos="fade-right">
 
 <div class="overview-card">
 
@@ -290,7 +291,7 @@ for recruitment opportunities.
 
         <!-- CONTENT -->
 
-        <div class="highlight-content">
+        <div class="highlight-content" data-aos="fade-left">
 
             <span>
                 ✦ PROGRAM HIGHLIGHTS
@@ -310,7 +311,7 @@ for recruitment opportunities.
 
             <div class="highlight-list">
 
-                <div class="highlight-item">
+                <div class="highlight-item" data-aos="fade-right">
 
                     <i class="fa-solid fa-code"></i>
 
@@ -322,7 +323,7 @@ for recruitment opportunities.
 
                 </div>
 
-                <div class="highlight-item">
+                <div class="highlight-item" data-aos="fade-right">
 
                     <i class="fa-solid fa-laptop"></i>
 
@@ -334,7 +335,7 @@ for recruitment opportunities.
 
                 </div>
 
-                <div class="highlight-item">
+                <div class="highlight-item" data-aos="fade-leftt">
 
                     <i class="fa-solid fa-users"></i>
 
@@ -346,7 +347,7 @@ for recruitment opportunities.
 
                 </div>
 
-                <div class="highlight-item">
+                <div class="highlight-item" data-aos="fade-left">
 
                     <i class="fa-solid fa-certificate"></i>
 
@@ -369,7 +370,7 @@ for recruitment opportunities.
 
 <section class="domain-section">
 
-<div class="domain-heading">
+<div class="domain-heading" data-aos="fade-left">
 
 <span>✦ INTERNSHIP DOMAINS</span>
 
@@ -383,7 +384,7 @@ Explore Internship Programs
 
 <!-- CARD -->
 
-<div class="domain-card">
+<div class="domain-card" data-aos="fade-down">
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLYg_ivE46h05mL6slEgy2ABfMnYC9WXS16T6ADir1TF9_mZ5VBuycBfY&s=10">
 
@@ -405,7 +406,7 @@ Explore More
 
 <!-- CARD -->
 
-<div class="domain-card">
+<div class="domain-card" data-aos="fade-down">
 
 <img src="https://mobitouch.net/_next/image?url=https%3A%2F%2Fnew.mobitouch.pl%2Fwp-content%2Fuploads%2F2023%2F09%2FUI-Designera_-Blog-Main.jpg&w=3840&q=75">
 
@@ -427,7 +428,7 @@ Explore More
 
 <!-- CARD -->
 
-<div class="domain-card">
+<div class="domain-card" data-aos="fade-down">
 
 <img src="https://certiprof.com/cdn/shop/articles/DIGITAL_MARKETING_BY_CERTIPROF.webp?v=1742398487">
 
@@ -449,7 +450,7 @@ Explore More
 
 <!-- CARD -->
 
-<div class="domain-card">
+<div class="domain-card" data-aos="fade-down">
 
 <img src="https://jessup.edu/wp-content/uploads/2023/12/What-is-Data-Analytics.jpg">
 
@@ -477,7 +478,7 @@ Explore More
 
 <section class="modern-plans">
 
-<div class="plans-title">
+<div class="plans-title" data-aos="fade-down">
 
 <span>✦ FRONTEND PROGRAMS</span>
 
@@ -491,7 +492,7 @@ Choose Your Internship Journey
 
 <!-- 3 MONTHS -->
 
-<div class="modern-plan-card">
+<div class="modern-plan-card" data-aos="fade-left">
 
 <div class="duration-badge">
 3 Months
@@ -518,7 +519,7 @@ Apply Now
 
 <!-- 6 MONTHS -->
 
-<div class="modern-plan-card featured-plan">
+<div class="modern-plan-card featured-plan" data-aos="fade-right">
 
 <div class="popular-label">
 MOST POPULAR
@@ -558,7 +559,7 @@ Apply Now
 
 <div class="career-overlay"></div>
 
-<div class="career-content">
+<div class="career-content" data-aos="fade-right">
 
 <span>✦ START YOUR CAREER</span>
 
@@ -771,12 +772,18 @@ document.getElementById("internshipForm").addEventListener("submit", function(e)
 const dropdown =
 document.querySelector(".dropdown");
 
-dropdown.addEventListener("click", ()=>{
-
+if (dropdown) {
+    dropdown.addEventListener("click", () => {
     dropdown.classList.toggle("active");
 
-});
+    });
+}
 
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
 </script>
 </body>
 </html>
